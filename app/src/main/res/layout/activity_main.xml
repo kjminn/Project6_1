@@ -16,14 +16,6 @@
         android:textSize="25sp"
         android:textStyle="bold"
         android:gravity="center_horizontal"/>
-    <Button
-        android:id="@+id/btnStart"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/btn_start"
-        android:textSize="20sp"
-        android:padding="10dp"
-        />
     <RadioGroup
         android:id="@+id/rg"
         android:layout_width="wrap_content"
@@ -48,8 +40,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp">
-        <CalendarView
+        <DatePicker
             android:id="@+id/calendar"
+            android:datePickerMode="spinner"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
         <TimePicker
@@ -64,14 +57,6 @@
         android:layout_height="match_parent"
         android:gravity="bottom"
         android:orientation="horizontal">
-        <Button
-            android:id="@+id/btnDone"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/btn_done"
-            android:layout_marginLeft="10dp"
-            android:textSize="20sp"
-            android:padding="15dp"/>
         <TextView
             android:id="@+id/textResult"
             android:layout_width="match_parent"
